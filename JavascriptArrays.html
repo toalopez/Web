@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScriptArrays</title>
+</head>
+
+<body>
+
+ <script>
+ 	var continents = ["Australia", "Africa", "Antartica", "Eurasia", "America"];
+	
+	var response, count = 0;
+	
+	for (var continent in continents) 
+	{
+		response = confirm("Have you been to " + continents[continent] + "?");
+		
+		if  (response) count++;
+				
+	}
+	
+	alert("you have been to " + count + " continents");
+	
+ </script>
+</body>
+</html>

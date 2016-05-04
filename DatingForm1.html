@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>DatingSite</title>
+<style>
+	body {background-color:#DB77A9}
+	p, label {color: #F3EA0F}
+	h1 {color:white}
+</style>
+</head>
+<body>
+<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+	<h1>Welcome to Eternal Love dating site</h1>
+	<label for="firstname">Enter your name:</label>	
+    <input type="text" name="firstname" id="firstname" autofocus>
+    <br> <br>
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname" placeholder="Enter your father last name">
+    <br><br>
+    <label for="userpassword">Please enter your password:</label>
+    <input type="password" id="userpassword" name="userpassword"> 
+    <br> <br>
+    <label for="age">Age:</label>
+    <input type="number"  min="18" max="120"  step="1" value="18" id="age" name="age" required>
+    <br><br>
+    <p>Please enter your date of birth:</p>
+     <input type="date" id="DOB" name="DOB">
+     <br><br>
+     <p>what time you was born?:</p>
+     <input type="time" id="timeborn" name="time_born" >
+     <br><br>
+     <p>Enter your email Address:</p>
+     <input type="email" id="e" name="e" required>
+     <br><br>
+     <p>Enter your Phone:</p>
+     <input type="tel" id="phone" name="phone">
+     <br><br>
+    <p>Where would you like to travel?:</p>
+    <select name="travel" id="travel">
+    <option value="hk">Hong Kong</option>
+    <option value="brazil">Brazil</option>
+    <option value="UK">England</option>
+    <option value="PR">Puerto Rico</option>
+    <option value="spain">Spain</option>
+    <option value="Italy">Italy</option>
+    </select>
+    <br><br>
+    <label for="favoritefoods">Your favorite foods</label>
+    <br> <br>
+    <input type="checkbox" id="favoritefoods" name="favoritefoods" value="Ice cream">Ice Cream<br>
+    <input type="checkbox" id="Spagetti" name="favoritefoods" value="Spagetti">Spagetti<br>
+    <input type="checkbox" id="Chicken Wings" name="favoritefoods" value="Chicken Wings">Chicken Wings<br>
+    <input type="checkbox" id="Salad" name="favoritefoods" value="Salad">Salad<br>
+    <input type="checkbox" id="Sushi" name="favoritefoods" value="Sushi">Sushi<br>
+    <br> <br>
+    <label for="favcolor">Choose your Favorite Color:</label>
+    <input type="color" id="favcolor" name="favcolor">
+    <br><br>
+    <label for="sex">Sex:</label>
+    <input type="radio" id="Male"  name="sex" value="Male" checked>Male
+    <input type="radio" id="FemaleFemale"  name="sex" value="Female">Female
+    <br><br>
+    <label for="FileToUpload">Choose a file to upload:</label>
+    <input type="file" name="FileToUpload">
+    <br><br>
+    <p>Please rate our dating site:</p>
+     Poor <input type="range" id="rating" name="ratingsite" min="1" max="10" step="1" value="5">Excellent <br>
+     <br><br>
+	<p>Please enter your Address:</p>
+    <textarea name="personalinfo" id="personalinfo" cols="60" rows="3">
+     Enter your information here
+    </textarea>
+    <br>
+	<input type="submit" value="Send">
+</form>
+</body>
+</html>
